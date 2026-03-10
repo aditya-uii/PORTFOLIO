@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap');
+
+@theme {
+  --color-uzumaki-orange: #f66c2d;
+  --color-hokage-gold: #ffd700;
+  --color-akatsuki-red: #ff0000;
+  --color-ninja-black: #050505;
+  --color-ninja-gray: #1a1a1a;
+
+  --font-anton: "Anton", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+:root {
+  background-color: #050505;
+  color: white;
+  font-family: var(--font-inter);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-anton);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chakra-glow {
+  box-shadow: 0 0 15px var(--color-uzumaki-orange);
+}
+
+.text-stroke-orange {
+  -webkit-text-stroke: 1px var(--color-uzumaki-orange);
+}
+
+/* Custom Cursor */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--color-uzumaki-orange);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
