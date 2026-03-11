@@ -1,16 +1,36 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Aditya's Portfolio
 
-Currently, two official plugins are available:
+This is my personal developer portfolio showcasing my projects, skills, and experience in web development.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 About
+I am a web developer passionate about building modern and responsive web applications. This portfolio highlights some of the projects I have worked on and the technologies I enjoy using.
 
-## React Compiler
+## 🛠️ Tech Stack
+- React.js
+- JavaScript
+- Tailwind CSS
+- HTML5
+- CSS3
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- Responsive design
+- Modern UI
+- Smooth animations
+- Project showcase section
+- Contact section
 
-## Expanding the ESLint configuration
+## 📂 Projects
+Some of the projects featured in this portfolio include:
+- Web applications built with React
+- UI/UX focused websites
+- Interactive frontend components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📬 Contact
+Feel free to reach out if you'd like to collaborate or connect.
+
+- GitHub: https://github.com/aditya-uii
+
+---
+
+⭐ If you like this project, consider giving it a star!
