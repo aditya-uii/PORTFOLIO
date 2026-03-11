@@ -115,10 +115,17 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
-          <button className="px-10 py-4 bg-uzumaki-orange text-white font-black rounded-sm transform hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-transparent hover:border-white chakra-glow uppercase text-xs tracking-[0.2em] shadow-2xl">
+          <button className="px-10 py-4 bg-uzumaki-orange text-white font-black rounded-sm transform hover:scale-105 active:scale-95 transition-all duration-300 border-2 border-transparent hover:border-white chakra-glow uppercase text-xs tracking-[0.2em] shadow-2xl"
+          >
             Explore Jutsu
           </button>
-          <button className="px-10 py-4 bg-transparent text-white font-black rounded-sm border-2 border-hokage-gold/50 hover:border-hokage-gold hover:bg-hokage-gold hover:text-ninja-black transition-all duration-300 uppercase text-xs tracking-[0.2em]">
+          <button className="px-10 py-4 bg-transparent text-white font-black rounded-sm border-2 border-hokage-gold/50 hover:border-hokage-gold hover:bg-hokage-gold hover:text-ninja-black transition-all duration-300 uppercase text-xs tracking-[0.2em]"
+            onClick={() => {
+    document.getElementById("projects").scrollIntoView({
+      behavior: "smooth"
+    });
+  }}
+          >
             See Missions
           </button>
         </div>

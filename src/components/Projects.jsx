@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ExternalLink, Github, ShieldAlert, Award } from 'lucide-react';
+import chatbot from '../assets/ChatGPT Image Mar 11, 2026, 01_21_06 PM.png';
+import youtube from '../assets/yt.png'
+import waffle from '../assets/waffle.png'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,29 +18,35 @@ const projects = [
         bgColor: 'bg-akatsuki-red/10',
         borderColor: 'border-akatsuki-red',
         stamp: 'TOP SECRET',
-        image: 'https://images.unsplash.com/photo-1578632292335-df3abbb0d586?q=80&w=1974&auto=format&fit=crop'
+        image: chatbot,
+         github: 'https://github.com/aditya-uii/AI-ChatBot',
+        live: 'https://ai-chatbot-frontend-yjj8.onrender.com'
     },
     {
-        title: 'Shadow Clone Chat',
-        description: 'High-speed communication network optimized for instant messaging between shadow clones. Features automatic synchronization and chakra-efficient messaging.',
-        tags: ['Socket.io', 'Express', 'React'],
+        title: 'Youtube-Clone-Reactjs',
+        description: 'A simple and clean YouTube Clone built using React and Vite, featuring video cards, a sidebar layout, a YouTube-style header, and responsive design.',
+        tags: ['Node.js', 'Express', 'React'],
         rank: 'A-RANK',
         color: 'text-uzumaki-orange',
         bgColor: 'bg-uzumaki-orange/10',
         borderColor: 'border-uzumaki-orange',
         stamp: 'CLASSIFIED',
-        image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop'
+        image: youtube,
+           github: 'https://github.com/aditya-uii/Youtube-Clone-Reactjs',
+        live: ''
     },
     {
-        title: 'Sharingan Vision API',
-        description: 'Advanced computer vision service capable of tracking movement patterns and predictive analytics. Enhances situational awareness for tactical operations.',
-        tags: ['Python', 'OpenCV', 'FastAPI'],
+        title: 'Fun Waffle Site',
+        description: 'Waffle is a [brief description: e.g. “lightweight front-end UI project,” “interactive web app,” “utility for X”] built with HTML, CSS, and JavaScript.',
+        tags: ['html', 'css', 'JavaScript'],
         rank: 'B-RANK',
         color: 'text-hokage-gold',
         bgColor: 'bg-hokage-gold/10',
         borderColor: 'border-hokage-gold',
         stamp: 'CONFIDENTIAL',
-        image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop'
+        image: waffle,
+           github: 'https://github.com/aditya-uii/waffle',
+        live: 'waffle-fox.netlify.app/'
     }
 ];
 
@@ -136,7 +145,7 @@ const Projects = () => {
                                         {project.title.toUpperCase()}
                                     </h3>
 
-                                    <p className="text-gray-400 text-sm leading-relaxed mb-8 h-20 overflow-hidden">
+                                    <p className="text-gray-400 text-sm leading-relaxed mb-8 h-25 overflow-hidden">
                                         {project.description}
                                     </p>
 
@@ -151,18 +160,18 @@ const Projects = () => {
                                     {/* Actions / "Manual Override" */}
                                     <div className="flex items-center justify-between pt-6 border-t border-white/5">
                                         <div className="flex space-x-4">
-                                            <a href="https://github.com/aditya-uii/AI-ChatBot"
+                                            <a href={project.github}
                                               target="_blank" 
                                               rel="noopener noreferrer"
                                             className="p-2 bg-white/5 hover:bg-uzumaki-orange hover:text-white rounded-full transition-all duration-300 transform hover:scale-110">
                                                 <Github size={18} />
                                             </a>
-                                            <a   href="https://ai-chatbot-frontend-yjj8.onrender.com" 
-  target="_blank" 
-  rel="noopener noreferrer"
+                                            {/* <a href={project.live} 
+                                               target="_blank" 
+                                            rel="noopener noreferrer"
    className="p-2 bg-white/5 hover:bg-hokage-gold hover:text-ninja-black rounded-full transition-all duration-300 transform hover:scale-110">
                                                 <ExternalLink size={18} />
-                                            </a>
+                                            </a> */}
                                         </div>
                                         <div className="text-[10px] text-white/30 font-mono italic">
                       // AUTH_LVL_{index + 1}
