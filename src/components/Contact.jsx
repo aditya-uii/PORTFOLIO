@@ -21,13 +21,12 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(
-            "service_0l53xz7",
-            "template_fhl7eld",
-            formRef.current,
-            "ScHQk7JRZyiVgGU5E"
-        )
-        .then(() => {
+       emailjs.sendForm(
+  import.meta.env.VITE_EMAIL_SERVICE_ID,
+  import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+  formRef.current,
+  import.meta.env.VITE_EMAIL_PUBLIC_KEY
+).then(() => {
             alert("Mission Request Sent! 🐦 Messenger bird dispatched.");
             formRef.current.reset();
         })
