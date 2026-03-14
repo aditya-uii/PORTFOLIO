@@ -98,7 +98,7 @@ const Hero = () => {
           </svg>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-5">
           <img
             src={adiLogo}
             alt="ADI Logo"
